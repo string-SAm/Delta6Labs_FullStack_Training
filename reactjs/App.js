@@ -10,19 +10,30 @@ import ReduxThunkApi from './components/Redux/reduxThunkApi/ReduxThunkApi'
 import PostForm from './components/PostForm'
 import store from './components/Redux/Stores/postStore'
 import PostList from './components/PostList'
+import UseEffects from './components/Redux/UseEffect'
+import Pagination from './components/Pagination'
+import WebSocket from './components/WebSocket'
+import UseEffExample from './components/Redux/UseEffectExample'
+import UseReducerCounter from './components/UseReducer'
+import UseReducerTodoList from './components/UseReducer'
+import CustomHook from './components/CustomHook'
+import UseRefCounter from './components/UseRef'
 
 
 function App() {
   return (
-    <Provider store={store}>
+    <>
+      <UseRefCounter/>
+    </>
+    // <Provider store={store}>
     
-      <div>
+    //   <div>
      
-      <PostForm/>   
-      <hr/>
-      <PostList/> 
-      </div>
-    </Provider>
+    //   <PostForm/>   
+    //   <hr/>
+    //   <PostList/> 
+    //   </div>
+    // </Provider>
   )
 }
 
